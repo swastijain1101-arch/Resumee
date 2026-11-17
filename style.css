@@ -1,0 +1,138 @@
+/* Swasti Jain portfolio — custom CSS for the resume website */
+:root{--ink:#292729;--muted:#777176;--paper:#fffdfb;--rose:#b7838d;--rose-dark:#875965;--pink:#f5e9e9;--line:#e8d9d8;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(1120px,calc(100% - 48px));margin:0 auto}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(255,253,251,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font-family:var(--serif);font-weight:700;letter-spacing:.06em;font-size:1.18rem}
+.wordmark span{color:var(--rose-dark)}
+.nav-menu{display:flex;align-items:center;gap:27px;list-style:none;margin:0;padding:0}
+.nav-menu a{font-size:.76rem;font-weight:600;color:#625b60;transition:color .2s}
+.nav-menu a:hover{color:var(--rose-dark)}
+.nav-toggle{display:none;background:none;border:0;font-size:1.5rem}
+.hero{min-height:640px;display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;padding-top:65px;padding-bottom:78px}
+.kicker{font-size:.67rem;letter-spacing:.17em;font-weight:700;color:var(--rose-dark);margin:0 0 20px}
+.kicker span{display:inline-block;width:25px;height:1px;background:var(--rose);vertical-align:middle;margin-right:9px}
+h1,h2,h3,p{margin-top:0}
+h1{font-family:var(--serif);font-size:clamp(4rem,7vw,6.3rem);font-weight:500;letter-spacing:-.055em;line-height:1.03;margin-bottom:23px}
+h1 em,h2 em{color:var(--rose-dark);font-style:normal}
+.hero-summary{font-family:var(--serif);font-size:1.35rem;line-height:1.5;max-width:570px;margin-bottom:15px}
+.hero-body{max-width:555px;color:var(--muted);font-size:.91rem}
+.hero-links{display:flex;align-items:center;gap:28px;margin-top:29px}
+.primary-link{display:inline-flex;align-items:center;gap:18px;background:var(--rose-dark);color:white;padding:13px 18px;font-size:.78rem;font-weight:700;transition:background .2s,transform .2s}
+.primary-link:hover{background:#68434d;transform:translateY(-2px)}
+.underlined-link{font-size:.8rem;font-weight:700;border-bottom:1px solid var(--rose);padding-bottom:3px}
+.hero-meta{margin-top:37px;font-size:.73rem;color:var(--muted)}
+.hero-meta i{padding:0 8px;color:var(--rose)}
+.pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#87a58a;margin-right:8px}
+.hero-image-area{position:relative;width:min(100%,410px);justify-self:center;padding:16px 16px 42px}
+.hero-image{position:relative;z-index:1;width:100%;height:500px;object-fit:cover;object-position:center 40%;border-radius:3px;box-shadow:0 25px 60px rgba(52,37,42,.16)}
+.image-outline{position:absolute;inset:0 0 35px 35px;border:1px solid #d5b5b9}
+.image-label{position:absolute;z-index:2;right:0;bottom:0;background:white;padding:12px 20px;box-shadow:0 8px 25px #46303812;display:flex;flex-direction:column}
+.image-label small{font-size:.57rem;letter-spacing:.14em;color:var(--rose-dark);font-weight:700}
+.image-label strong{font-family:var(--serif);font-size:1.05rem}
+.quick-facts{background:#352d31;color:white}
+.facts-grid{display:grid;grid-template-columns:repeat(4,1fr);padding-top:27px;padding-bottom:27px}
+.facts-grid div{display:flex;flex-direction:column;gap:2px;padding-left:28px;border-left:1px solid #ffffff2a}
+.facts-grid div:first-child{padding-left:0;border:0}
+.facts-grid strong{font-family:var(--serif);font-size:1.6rem;color:#e2bdc3;font-weight:500}
+.facts-grid span{font-size:.7rem;color:#d6cdd0}
+.section{padding-top:96px;padding-bottom:96px}
+.section-title{max-width:690px;margin-bottom:40px}
+.section-title h2,.contact-grid h2{font-family:var(--serif);font-size:clamp(2.5rem,4.8vw,4rem);line-height:1.12;letter-spacing:-.04em;font-weight:500;margin-bottom:13px}
+.section-lead{max-width:570px;color:var(--muted);font-size:.9rem}
+.education-list{border-top:1px solid var(--line)}
+.education-card{display:grid;grid-template-columns:190px 1fr 45px;gap:25px;align-items:start;padding:29px 10px;border-bottom:1px solid var(--line);transition:background .2s}
+.education-card:hover{background:#fcf5f4}
+.year{font-size:.7rem;letter-spacing:.08em;font-weight:700;color:var(--rose-dark);padding-top:4px}
+.eyebrow{font-size:.63rem;letter-spacing:.14em;color:var(--rose-dark);font-weight:700;margin-bottom:6px}
+.edu-content h3,.milestone h3,.skill-columns h3,.work-note h3{font-family:var(--serif);font-size:1.45rem;line-height:1.3;font-weight:600;margin-bottom:3px}
+.edu-content p{font-size:.86rem;margin-bottom:4px}
+.muted{color:var(--muted)}
+.edu-number{font-family:var(--serif);font-size:1.35rem;color:#c7a4aa;text-align:right}
+.tinted{background:#f8eeee}
+.milestone-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.milestone{background:#fffdfb;padding:30px 32px;border:1px solid #eddddd;transition:transform .2s,box-shadow .2s}
+.milestone:hover{transform:translateY(-4px);box-shadow:0 15px 35px #563c4210}
+.milestone-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:34px}
+.milestone-top span{font-family:var(--serif);font-size:1.5rem;color:#c59da4}
+.milestone-top small,.work-note small{font-size:.59rem;letter-spacing:.12em;color:var(--rose-dark);font-weight:700}
+.milestone h3{font-size:1.65rem}
+.milestone-sub{font-size:.78rem;color:var(--rose-dark);font-weight:600}
+.milestone>p:not(.milestone-sub){font-size:.85rem;color:var(--muted)}
+.tags,.interest-cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags span,.interest-cloud span{border:1px solid var(--line);padding:5px 10px;border-radius:30px;font-size:.65rem;color:var(--rose-dark)}
+.campus-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:60px;align-items:center}
+.campus-photo{height:390px;overflow:hidden;position:relative}
+.campus-photo img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.campus-copy{color:var(--muted);font-size:.9rem}
+.campus-copy .large-copy{font-family:var(--serif);font-size:1.7rem;line-height:1.45;color:var(--ink)}
+.course-strip{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:48px;padding-top:25px;border-top:1px solid var(--line)}
+.course-strip small{font-size:.62rem;letter-spacing:.13em;font-weight:700;color:var(--rose-dark)}
+.course-strip p{font-size:.8rem;color:var(--muted);margin:7px 0 0}
+.skills-section{background:#f8eeee}
+.skill-columns{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.skill-columns article{background:white;padding:25px;min-height:185px;border:1px solid #eddddd}
+.skill-index{font-family:var(--serif);color:#c59da4;font-size:1.2rem}
+.skill-columns h3{font-size:1.25rem;margin-top:15px}
+.skill-columns p{font-size:.83rem;color:var(--muted);margin-bottom:0}
+.work-note{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;background:#352d31;color:white;padding:30px 34px;margin-top:16px}
+.work-note h3{margin:8px 0 0;font-size:1.45rem}
+.work-note p{color:#d4c9cc;font-size:.83rem;margin:0}
+.resume-section{padding-top:75px;padding-bottom:90px}
+.resume-box{background:#f6e9e9;padding:46px 52px;display:flex;justify-content:space-between;align-items:center;gap:35px}
+.resume-box>div:first-child{max-width:610px}
+.resume-box h2{font-family:var(--serif);font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.15;font-weight:500;margin-bottom:14px}
+.resume-box p:not(.kicker){color:var(--muted);font-size:.86rem;max-width:500px}
+.resume-box .primary-link{margin-top:10px}
+.resume-mark{width:170px;height:205px;background:#fffdfb;border:1px solid #e2c9cb;box-shadow:9px 9px 0 #d9bfc2;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.resume-mark span{font-family:var(--serif);font-size:4rem;color:var(--rose-dark)}
+.resume-mark small{text-align:center;font-size:.55rem;letter-spacing:.13em;line-height:1.8;color:var(--muted)}
+.contact-section{background:#352d31;color:white;padding:82px 0}
+.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:80px;align-items:center}
+.contact-grid .kicker{color:#e1b9c0}
+.contact-grid h2{max-width:560px}
+.contact-grid h2 em{color:#e1b9c0}
+.contact-grid>div:first-child>p:last-child{max-width:450px;color:#d2c7ca;font-size:.87rem}
+.contact-details{display:flex;flex-direction:column;gap:15px}
+.contact-details a,.contact-details p{display:flex;flex-direction:column;gap:3px;padding-bottom:13px;border-bottom:1px solid #ffffff30;font-size:.85rem;margin:0}
+.contact-details small{font-size:.59rem;letter-spacing:.14em;color:#e1b9c0;font-weight:700}
+.footer{background:#292326;color:#d5c9cd}
+.footer-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.footer p,.footer>a:last-child{font-size:.68rem;margin:0}
+.footer .wordmark{color:white}
+#home,#education,#achievements,#campus,#resume,#contact{scroll-margin-top:82px}
+@media(max-width:850px){
+ .nav-toggle{display:block;color:var(--ink);cursor:pointer}
+ .nav-menu{display:none;position:absolute;top:78px;left:0;right:0;background:var(--paper);padding:14px 24px 22px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:14px}
+ .nav-menu.open{display:flex}
+ .hero{grid-template-columns:1fr;gap:35px;padding-top:55px}
+ .hero-image-area{width:min(100%,390px)}
+ .hero-image{height:460px}
+ .campus-layout,.contact-grid{grid-template-columns:1fr;gap:30px}
+ .campus-photo{height:340px;max-width:420px}
+}
+@media(max-width:600px){
+ .wrap{width:calc(100% - 34px)}
+ h1{font-size:3.7rem}
+ .hero{min-height:auto}
+ .hero-links{align-items:flex-start;flex-direction:column;gap:17px}
+ .hero-image{height:420px}
+ .facts-grid{grid-template-columns:1fr 1fr;gap:22px}
+ .facts-grid div{padding-left:15px}
+ .facts-grid div:nth-child(3){padding-left:0;border:0}
+ .section{padding-top:70px;padding-bottom:70px}
+ .education-card{grid-template-columns:1fr 35px;gap:8px}
+ .education-card .year{grid-column:1/-1}
+ .edu-number{grid-column:2;grid-row:2}
+ .milestone-grid,.skill-columns,.course-strip,.work-note{grid-template-columns:1fr}
+ .milestone{padding:25px}
+ .campus-photo{height:300px}
+ .resume-box{padding:30px 24px;align-items:flex-start;flex-direction:column}
+ .resume-mark{width:130px;height:155px}
+ .footer-inner{padding:18px 0;flex-wrap:wrap}
+}
